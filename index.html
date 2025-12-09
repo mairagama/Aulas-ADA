@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+                  <meta charset="UTF-8">
+                  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                  <link href="css/site.css" rel="stylesheet" />
+                  <title>Aumiau Petstore</title>
+    </head>
+    <body>
+        <h1 class="titulo-principal">Bem vindos ao site da Aumiau Store</h1>
+        <p class="slogan">Os melhores modelos de roupas para pets estão aqui.</p>
+        <h2 class="titulo-secao">Produtos em destaque:</h2>
+        <ul class="produtos-destaque">
+            <li class="produto">
+                <img src="imagens/chucky.png" />
+                <h3>Roupinha do Chucky</h3>
+                <a href="chucky.html">Clique aqui para detalhes</a>
+            </li>
+            <li class="produto">
+                <img src="imagens/cowboy.webp" />
+                <h3>Roupinha Cowboy</h3>
+                <a href="cowboy.html">Clique aqui para detalhes</a>
+            </li>
+            <li class="produto">
+                <img src="imagens/dinossauro.png" />
+                <h3>Roupinha Dino</h3>
+                <a href="dino.html">Clique aqui para detalhes</a>
+            </li>
+        </ul>
+        <h2 class="titulo-secao">Produtos mais vendidos:</h2>
+        <ol class="mais-vendidos">
+            <li>Dinossauro</li>
+            <li>Cowboy</li>
+            <li>Chucky</li>
+        </ol>
+        
+        <form action="https://httpbin.org/post" method="post">
+            <label for="nomeTutor">Nome do tutor:</label>
+            <input type="text" id="nomeTutor" name="nomeTutor" placeholder="Digite seu nome completo" />
+
+            <label for="emailTutor">E-mail:</label>
+            <input type="email" id="emailTutor" name="emailTutor" placeholder="Digite seu melhor e-mail" required />
+
+            <label for="tipoPet">Tipo de pet:</label>
+            <select id="tipoPet" name="tipoPet">
+                <option value="">Selecione</option>
+                <option value="cao">Cão</option>
+                <option value="gato">Gato</option>
+                <option value="outro">Outro</option>
+            </select></br></br>
+
+            <label for="dataNascimentoPet">Data de Nascimento do Pet:</label>
+            <input type="date" id="dataNascimentoPet" name="dataNascimentoPet" placeholder="Selecione a data" /></br></br>
+
+            <label for="sugestoes">Sugestões para o site:</label>
+            <textarea id="sugestoes" name="sugestoes" rows="4" cols="50" placeholder="Deixe aqui suas ideias e sugestões..."></textarea>
+
+            <button type="submit">Quero Descontos!</button>
+        </form>
+    </body>
+</html>
